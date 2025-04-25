@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="shortcut icon" href="./assets/imgs/favicon/check-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/4425dd6319.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+        <i class="fa-solid fa-list-check"></i>
+    </header>
+    <main>
+        <section class="nueva-tarea">
+            <input type="text" placeholder="Ingrese una nueva tarea" id="nueva-tarea-input">
+            <button id="nueva-tarea-btn">Agregar tarea</button>
+        </section>
+        <section class="recuento-tareas">
+            <p>Total: <span id="tareas-total"></span></p>
+            <p>Realizadas: <span id="tareas-realizadas"></span></p>
+        </section>
+        <section class="lista-tareas">
+            <div id="tarea-id"></div>
+            <h4>ID</h4>
+            <div id="tarea-nombre"></div>
+            <h4>Nombre</h4>
+            <div id="tarea-check"></div>
+            <div id="tarea-btn"></div>
+        </section>
+    </main>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
