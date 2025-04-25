@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,45 @@
     <link rel="shortcut icon" href="./assets/imgs/favicon/check-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/4425dd6319.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>To-Do List</h1>
-        <i class="fa-solid fa-list-check"></i>
+        <hr>
     </header>
     <main>
         <section class="nueva-tarea">
-            <input type="text" placeholder="Ingrese una nueva tarea" id="nueva-tarea-input">
-            <button id="nueva-tarea-btn">Agregar tarea</button>
+            <p>Nueva tarea</p>
+            <article id="nueva-tarea-input">
+                <input type="text" placeholder="Ingrese una nueva tarea" id="nueva-tarea-input-box">
+                <button id="nueva-tarea-btn">Agregar tarea</button>
+            </article>
         </section>
-        <section class="recuento-tareas">
-            <p>Total: <span id="tareas-total"></span></p>
-            <p>Realizadas: <span id="tareas-realizadas"></span></p>
-        </section>
-        <section class="lista-tareas">
-            <div id="tarea-id"></div>
-            <h4>ID</h4>
-            <div id="tarea-nombre"></div>
-            <h4>Nombre</h4>
-            <div id="tarea-check"></div>
-            <div id="tarea-btn"></div>
+        <section class="tareas">
+            <article class="recuento-tareas">
+                <p>Total: <span id="tareas-total">0</span></p>
+                <p>Realizadas: <span id="tareas-realizadas">0</span></p>
+            </article>
+            <article >
+                <div class="tarea">
+                    <div class="tarea-id"></div>
+                    <h4>ID</h4>
+                    <div class="tarea-nombre"></div>
+                    <h4>Nombre</h4>
+                    <div class="tarea-check"></div>
+                    <div class="tarea-btn"></div>
+                </div>
+                <div id="lista-tareas"></div>
+            </article>
         </section>
     </main>
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+}
+
+header {
+    background-color: rgb(243, 243, 243);
+    width: 80%;
+    padding: 20px;
+    margin-top: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header br{
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(243, 243, 243);
+    width: 80%;
+    padding: 0px 20px 50px 0px;
+}
+
+.nueva-tarea {
+    width: 80%;
+    padding: 10px 15px;
+}
+
+.nueva-tarea p {
+    padding-bottom: 10px;
+}
+
+.nueva-tarea-input {
+    display: flex;
+    gap: 20px;
+}
+
+#nueva-tarea-input input,
+button {
+    border-radius: 4px;
+}
+
+#nueva-tarea-input input {
+    width: 75%;
+}
+
+#nueva-tarea-input button {
+    background-color: rgb(20, 143, 20);
+    padding: 5px 7px;
+    color: white;
+}
+
+.tareas {
+    display: grid;
+    gap: 30px;
+    padding-left: 20px;
+    grid-template-columns: 3fr 8fr;
+}
+
+#tareas-total, #tareas-realizadas{
+    font-weight: 700;
+}
+
+.lista-tareas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarea-id {
+    grid-area: id;
+}
+
+.tarea-nombre {
+    grid-area: nombre;
+}
+
+.tarea-check {
+    grid-area: check;
+}
+
+.tarea-btn {
+    grid-area: btn;
+}
+
+.tarea {
+    display: grid;
+    grid-template-areas: "id nombre check btn";
+    grid-template-columns: 1fr 10fr 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 7px;
+}
+
+.realizada {
+    text-decoration: line-through;
+    color: grey;
+    opacity: 0.6;
+  }
+  
+
+.tarea-btn-eliminar{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
